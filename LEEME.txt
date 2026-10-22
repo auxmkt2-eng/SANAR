@@ -1,0 +1,4 @@
+Panel Sanare
+Abra index.html en su navegador o publique este archivo en la raíz de un repositorio con GitHub Pages.
+Conserva el enfoque de accesos directos del ZIP original y enlaza las cuatro plataformas indicadas; no modifica sus formularios.
+Las tipografías se cargan desde Google Fonts y requieren conexión a Internet. Los enlaces externos requieren conexión.
