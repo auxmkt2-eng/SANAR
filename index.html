@@ -8,10 +8,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Give+You+Glory&family=Just+Me+Again+Down+Here&family=Ms+Madi&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}body{margin:0;background:#fff;color:#252525;font-family:Arial,Helvetica,sans-serif}main{max-width:1440px;margin:auto;padding:42px 40px 32px}header{display:flex;justify-content:space-between;align-items:center;padding-bottom:28px;border-bottom:1px solid #e5e5e5}.brand{font-size:25px;letter-spacing:.04em}.brand span{display:block;font-size:13px;color:#777;letter-spacing:0;margin-top:6px}.count{color:#777;font-size:14px}.intro{margin:36px 0 30px}h1{font-size:28px;font-weight:400;margin:0 0 10px}.intro p{color:#777;line-height:1.6;margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}.card{position:relative;display:flex;flex-direction:column;min-height:350px;padding:27px 25px 24px;border:1.5px solid #ddd;border-radius:13px;color:inherit;text-decoration:none;transition:box-shadow .2s,border-color .2s,transform .2s;background:#fff}.card:hover,.card:focus-visible{box-shadow:0 2px 9px #0003;border-color:#ccc;transform:translateY(-2px)}.card:focus-visible{outline:2px solid #444;outline-offset:5px}.top{display:flex;align-items:start;justify-content:space-between;gap:15px}.card h2{font-size:25px;font-weight:400;margin:0 0 7px;line-height:1.25}.category{font-size:19px;color:#777;margin:0}.number{font-size:15px;color:#777;white-space:nowrap;padding-top:5px}.sample{margin:38px 0 30px;font-size:clamp(38px,4.5vw,65px);line-height:1.3;font-weight:400;overflow-wrap:anywhere}.card:nth-child(1) .sample{font-family:'Ms Madi',cursive}.card:nth-child(2) .sample{font-family:'Clicker Script',cursive}.card:nth-child(3) .sample{font-family:'Give You Glory',cursive;font-size:clamp(34px,4vw,54px)}.card:nth-child(4) .sample{font-family:'Just Me Again Down Here',cursive}.action{margin-top:auto;font-size:13px;color:#777;display:flex;justify-content:space-between;align-items:center}.arrow{font-size:22px;color:#333}footer{font-size:12px;color:#888;padding-top:30px;line-height:1.6}@media(max-width:700px){main{padding:26px 20px}.grid{grid-template-columns:1fr;gap:22px}.card{min-height:290px}.sample{font-size:53px}.card:nth-child(3) .sample{font-size:43px}.count{font-size:12px}.card h2{font-size:23px}}@media(prefers-reduced-motion:reduce){.card{transition:none}}
+/* Identidad SANARÉ: marfil, rosa empolvado y taupe. */
+:root{color-scheme:light;--ink:#493c38;--muted:#78655f;--accent:#96766d;--line:#ded0c9}
+body{min-height:100vh;color:var(--ink);background:radial-gradient(ellipse at 0% 0%,#ead6ce 0,transparent 55%),radial-gradient(ellipse at 100% 85%,#e9dfd2 0,transparent 52%),#f7f2ec;background-attachment:fixed}
+main{padding-top:30px}
+header{border-color:var(--line);gap:20px;padding-bottom:24px}
+.brand-lockup{display:flex;align-items:center;gap:22px;min-width:0}
+.brand-logo{display:block;width:104px;height:130px;object-fit:contain;flex-shrink:0}
+.brand{font-size:28px;font-weight:500;letter-spacing:.12em;color:#72574e}
+.brand span{font-size:13px;letter-spacing:.025em;color:var(--muted);font-weight:400;margin-top:8px}
+.count{color:var(--muted);border:1px solid var(--line);background:#ffffff70;padding:9px 14px;border-radius:30px;white-space:nowrap}
+.intro{margin:32px 0 28px}.intro h1{color:var(--ink)}
+.intro p,.category,.number,.action,footer{color:var(--muted)}
+.grid{gap:28px}
+.card{background:#fffdf9;border-color:#e1d4cc;box-shadow:0 7px 24px #71534708}
+.card:hover,.card:focus-visible{background:#fffefa;border-color:#b79a8f;box-shadow:0 12px 30px #71534716;transform:translateY(-3px)}
+.card:focus-visible{outline:3px solid #96766d;outline-offset:4px}
+.sample{color:#87675f}.arrow{color:#87675f}
+.action{padding-top:18px;border-top:1px solid #eee4dd}
+footer{padding-top:26px}
+@media(max-width:700px){main{padding-top:22px}.brand-lockup{gap:13px}.brand-logo{width:70px;height:88px}.brand{font-size:22px}.brand span{font-size:11px}.count{font-size:11px;padding:7px 10px}header{gap:10px}.grid{gap:20px}}
+@media(max-width:380px){.brand-lockup{gap:10px}.brand-logo{width:54px;height:68px}.brand{font-size:19px}.count{padding:6px 8px;font-size:10px}}
 </style>
 </head>
 <body><main>
-<header><div class="brand">SANARE<span>Herramientas clínicas</span></div><span class="count">4 herramientas</span></header>
+<header><div class="brand-lockup"><img class="brand-logo" src="assets/logo-sanare.png" alt="Logotipo de SANARÉ, Centro oncológico y alta especialidad" width="104" height="130"><div class="brand">SANARÉ<span>Herramientas clínicas</span></div></div><span class="count">4 herramientas</span></header>
 <section class="intro"><h1>Todo a la mano.</h1><p>Elige una herramienta para acceder a su plataforma.</p></section>
 <section class="grid" aria-label="Herramientas disponibles">
 <a class="card" href="https://soportesanare-create.github.io/Hoja-de-enfermeria/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Hoja de enfermería en una nueva pestaña"><div class="top"><div><h2>Hoja de enfermería</h2><p class="category">Registro y cuidados</p></div><span class="number">01</span></div><p class="sample">Cuidar cada detalle</p><div class="action"><span>Abrir herramienta · Nueva pestaña</span><span class="arrow" aria-hidden="true">↗</span></div></a>
